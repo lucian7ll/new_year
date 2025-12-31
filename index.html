@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Happy New Year</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap&subset=cyrillic" rel="stylesheet">
+
+</head>
+<body>
+
+<canvas id="fireworks"></canvas>
+
+<img src="img/horse_1.png" alt="Left Decoration" class="corner-img left">
+<img src="img/horse_2.png" alt="Right Decoration" class="corner-img right">
+
+<div class="center">
+    <h1>✦🎄 С НОВЫМ ГОДОМ  🎄 ✦</h1>
+
+    <button class="vintage-btn" onclick="toggleGreeting()">
+        💝💝💝💝💝💝
+    </button>
+
+    <div id="greetingBox">
+        <p>
+            С Новым 2026 годом, буся моя любимая.
+            Этот год был в каких-то моментах тяжёлым, конечно, но мы справились. 
+            И я уверен, что и в дальнейшем справимся, и всё будет замечательно.
+            В целом год считаю довольно пиздатым, потому что мы виделись, 
+            хорошо проводили время вместе. 
+            Сколько воспоминаний и фоток — я правда очень ценю это и скучаю по тем временам.
+            В этом новом году желаю, чтобы мы меньше ссорились, больше виделись и ещё больше любили друг друга.
+            ❤️- С любовью,HAVBEK (воздушный поцелуйчик.)❤️
+
+        </p>
+    </div>
+
+    <button class="vintage-btn alt" onclick="startMusic()">
+        🎶🎶🎶🎶
+    </button>
+</div>
+
+<audio id="music" loop>
+    <source src="d_avaria.mp3" type="audio/mpeg">
+</audio>
+
+<script src="script.js"></script>
+</body>
+</html>

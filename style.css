@@ -1,0 +1,102 @@
+/* GLOBAL */
+body {
+    margin: 0;
+    overflow: hidden;
+    background: #bb0d6d;
+   font-family: 'PT Sans', 'PT Sans Narrow', Arial, sans-serif;
+    color: #f076b3;
+    text-align: center;
+}
+
+/* CENTER CONTENT */
+.center {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    transform: translateY(-50%);
+}
+
+/* TITLE */
+h1 {
+    font-size: 3.2em;
+    margin-bottom: 25px;
+    color: #7eadf0;
+    text-shadow: 0 0 15px rgb(213, 143, 171);
+}
+
+/* VINTAGE BUTTONS */
+.vintage-btn {
+    display: inline-block;
+    margin: 12px;
+    padding: 14px 30px;
+    font-size: 1.1em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    border: 2px solid #ffd1e8;
+    background: linear-gradient(145deg, #4b72f3, #ed7ce4);
+    color: #ffd1e8;
+    cursor: pointer;
+    box-shadow:
+        inset 0 0 0 2px rgba(255,255,255,0.1),
+        0 6px 15px rgba(0,0,0,0.6);
+    transition: all 0.3s ease;
+}
+
+.vintage-btn:hover {
+    background: linear-gradient(145deg, #8a1c54, #4a0f2f);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.8);
+    transform: translateY(-2px);
+}
+
+/* SECOND BUTTON VARIATION */
+.vintage-btn.alt {
+    border-style: double;
+    border-width: 4px;
+}
+
+/* MESSAGE BOX */
+#greetingBox {
+    display: none;
+    margin: 25px auto;
+    max-width: 460px;
+    padding: 25px;
+    background: rgba(255, 200, 220, 0.12);
+    border: 2px solid rgba(255, 200, 220, 0.4);
+    font-size: 1em;
+    line-height: 1.6;
+    animation: fadeIn 0.5s ease;
+}
+
+/* CANVAS */
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.corner-img {
+    position: fixed;   /* fixed relative to viewport */
+    bottom: 0;         /* stick to bottom */
+    width: 400px;      /* adjust size */
+    z-index: 10;       /* above canvas */
+}
+
+.corner-img.left {
+    left: 0;           /* bottom-left */
+}
+
+.corner-img.right {
+    right: 0;          /* bottom-right */
+}
